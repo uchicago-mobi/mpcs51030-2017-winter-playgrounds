@@ -27,7 +27,7 @@ import Foundation
 /// Declare a variable and set a default value of 'blue'
 /// Property observers are set in the code block following
 /// declaration
-var color: String = "blue" {
+var color: String = "green" {
   willSet {
     print("The color is going to be \(newValue)")
   }

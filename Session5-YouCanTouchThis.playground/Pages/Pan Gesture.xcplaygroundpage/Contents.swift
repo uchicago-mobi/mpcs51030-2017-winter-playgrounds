@@ -40,11 +40,13 @@ class PlaygroundViewController: UIViewController {
     
     // Determine where the view is in relation to the superview
     let translation = recognizer.translation(in: self.view)
+    print(translation)
     
     if let view = recognizer.view {
       // Set the view's center to the new position
       view.center = CGPoint(x:view.center.x + translation.x,
                             y:view.center.y + translation.y)
+      print(view.center)
     }
     
     // Reset the translation back to zero, so we are dealing

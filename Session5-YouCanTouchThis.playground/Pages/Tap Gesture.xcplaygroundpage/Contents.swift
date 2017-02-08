@@ -33,7 +33,7 @@ class PlaygroundViewController: UIViewController {
     // Create a tap gesture recoginzer
     let tapGesture = UITapGestureRecognizer(target: self,
                                             action: #selector(handleTap(_:)))
-    tapGesture.numberOfTapsRequired = 2
+    tapGesture.numberOfTapsRequired = 1
     
     // Add tap gesture recognizer to the box
     box.addGestureRecognizer(tapGesture)
